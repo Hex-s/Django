@@ -18,6 +18,7 @@ from django.contrib import admin
 from tmpl_app import views as tmpl_views
 
 urlpatterns = [
+	url(r'^add2/(\d+)/(\d+)$',tmpl_views.add,name="add"),
 	url(r'^$',tmpl_views.home,name='home'),
     url(r'^admin/', admin.site.urls),
 ]
